@@ -22,7 +22,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/AGRO_FRONTEND.git
+    git clone https://github.com/Axwell15/AGRO_FRONTEND.git
     ```
 2. Navigate to the project directory:
     ```bash
