@@ -1,0 +1,6 @@
+.profile-view{
+    @apply w-full h-full flex flex-wrap;
+    @apply bg-gray-100;
+    @apply overflow-auto;
+    @apply pb-20;
+}

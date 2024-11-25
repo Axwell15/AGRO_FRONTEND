@@ -1,0 +1,48 @@
+.selling {
+    @apply w-full;
+    @apply flex flex-col;
+    @apply overflow-auto;
+    @apply p-4;
+    @apply pb-28;
+}
+
+.sell-container {
+    @apply w-full h-full;
+    @apply flex flex-wrap;
+}
+
+.img-product{
+    @apply w-full md:w-1/3;
+    @apply justify-center;
+    @apply rounded-lg;
+}
+
+.img-product img{
+    @apply rounded-lg;
+    @apply w-full;
+    @apply h-full;
+    @apply object-contain;
+}
+
+.selling-form {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center justify-center;
+    @apply h-full w-full md:w-2/3;
+    @apply p-4 gap-4 ;
+}
+
+.selling-title {
+    @apply text-black;
+    @apply text-3xl;
+    @apply text-center md:pl-40 md:text-left;
+}
+
+.sell-info{
+    @apply w-full md:w-2/3;
+}
+
+.btn-selling{
+    @apply bg-primary-color;
+    @apply text-white;
+}

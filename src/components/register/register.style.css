@@ -1,0 +1,36 @@
+.container-register-form {
+    @apply flex;
+    @apply flex-col;
+    @apply p-12;
+    @apply w-full h-full;
+    @apply items-center;
+    @apply overflow-auto;
+}
+
+.container-register-form::-webkit-scrollbar{
+    @apply w-1;
+}
+
+.container-register-form::-webkit-scrollbar-track{
+    @apply bg-primary-color;
+}
+
+.container-register-form::-webkit-scrollbar-thumb{
+    @apply bg-primary-alt;
+}
+
+.info-register {
+    @apply w-full;
+    @apply flex;
+    @apply flex-col;
+    @apply text-xl;
+    @apply text-white;
+    @apply pb-11;
+}
+
+.info-register input {
+    @apply bg-inherit;
+    @apply border-b-2;
+    @apply border-black;
+    @apply pt-4;
+}

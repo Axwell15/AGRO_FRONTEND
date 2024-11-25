@@ -1,0 +1,13 @@
+.transaction-card {
+    @apply w-9/12;
+    @apply py-4;
+    @apply gap-2;
+    @apply bg-primary-color;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+    @apply rounded-2xl;
+    @apply text-white;
+    @apply text-lg;
+}

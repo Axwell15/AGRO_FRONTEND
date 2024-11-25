@@ -1,0 +1,43 @@
+.product-view {
+    @apply flex flex-wrap;
+    @apply w-full;
+    @apply h-full;
+    @apply overflow-hidden;
+}
+
+.product-image {
+    @apply w-full md:w-2/3;
+}
+
+.product-image img {
+    @apply w-full;
+    @apply h-full;
+    @apply object-cover object-center;
+}
+
+.product-title {
+    @apply text-2xl;
+    @apply font-bold;
+    @apply text-center;
+}
+
+.product-info {
+    @apply flex-auto flex-col flex-wrap;
+    @apply gap-24;
+    @apply w-full md:w-1/3;
+    @apply h-full;
+    @apply pl-4 md:pt-12;
+}
+
+.buy-btn {
+    @apply flex justify-center;
+}
+
+.buy-btn button {
+    @apply bg-primary-color;
+    @apply text-white;
+    @apply font-bold;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded;
+}

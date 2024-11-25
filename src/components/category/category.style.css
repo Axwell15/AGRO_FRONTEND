@@ -1,0 +1,31 @@
+.card-category {
+    @apply w-56;
+    @apply h-56;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-between;
+    @apply items-center;
+    @apply bg-primary-color;
+    @apply rounded-2xl;
+    @apply gap-2 pb-10;
+    @apply cursor-pointer;
+    @apply shadow-2xl;
+}
+
+.category-title {
+    @apply text-white;
+    @apply text-2xl;
+}
+
+.image-container {
+    @apply w-full;
+    @apply h-4/6;
+
+}
+
+.category-image {
+    @apply w-full;
+    @apply h-full;
+    @apply object-cover;
+    @apply rounded-t-2xl;
+}

@@ -1,0 +1,30 @@
+.mod-data {
+    @apply w-full md:w-2/3;
+    @apply h-full;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+}
+
+.modify-data {
+    @apply w-9/12;
+    @apply h-full;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+    @apply gap-16;
+}
+
+.data-info {
+    @apply w-full;
+}
+
+.data-btn {
+    @apply p-3;
+    @apply bg-primary-color;
+    @apply rounded-2xl;
+    @apply shadow-2xl;
+    @apply text-white;
+    @apply text-xl;
+}

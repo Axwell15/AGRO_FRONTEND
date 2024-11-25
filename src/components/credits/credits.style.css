@@ -1,0 +1,75 @@
+.credits {
+    @apply w-full;
+    @apply h-screen;
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply pb-20;
+}
+
+.credits-action {
+    @apply w-full;
+    @apply h-3/6;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+}
+
+.credits-record {
+    @apply w-5/6;
+    @apply h-2/4;
+    @apply bg-alt-bg;
+    @apply overflow-auto;
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply gap-4;
+}
+
+.credits-info {
+    @apply h-3/4;
+    @apply w-5/6;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-around;
+    @apply items-center;
+    @apply bg-primary-color;
+    @apply rounded-xl;
+    @apply shadow-2xl;
+    @apply p-3;
+
+}
+
+.credits-text {
+    @apply text-white;
+    @apply text-base;
+}
+
+.your-credits {
+    @apply text-white;
+    @apply text-3xl;
+}
+
+.credits-btn {
+    @apply text-black;
+    @apply text-base;
+    @apply bg-alt-bg;
+    @apply w-64;
+    @apply py-1;
+    @apply rounded-2xl;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+}
+
+.record-text {
+    @apply w-full;
+    @apply text-xl;
+    @apply p-2;
+    @apply pl-4;
+    @apply flex;
+    @apply items-end;
+    @apply text-left;
+}

@@ -1,0 +1,4 @@
+.btn{
+    @apply w-full shadow-xl py-3 px-4 text-sm tracking-wide rounded-lg text-white bg-primary-color hover:bg-primary-alt focus:outline-none;
+
+}

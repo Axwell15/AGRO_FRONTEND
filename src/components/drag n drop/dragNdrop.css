@@ -1,0 +1,36 @@
+.dnd-container{
+    @apply flex items-center justify-center;
+    @apply h-screen md:h-full;
+    @apply w-full md:w-2/3;
+    @apply p-40
+}
+.dragndrop{
+    @apply flex flex-col items-center justify-center gap-12;
+    @apply w-full h-full;
+    @apply bg-primary-color;
+    @apply rounded-2xl;
+    @apply shadow-2xl;
+}
+.dnd-title{
+    @apply text-white;
+    @apply text-3xl;
+    @apply font-title-font;
+    @apply text-center;
+}
+
+.dnd-span{
+    @apply text-white;
+    @apply text-xl;
+    @apply font-title-font;
+    @apply text-center;
+}
+
+.dnd-btn{
+    @apply bg-secondary-color;
+    @apply text-white;
+    @apply text-2xl;
+    @apply w-4/5;
+    @apply h-fit;
+    @apply p-2;
+    @apply rounded-xl;
+}   

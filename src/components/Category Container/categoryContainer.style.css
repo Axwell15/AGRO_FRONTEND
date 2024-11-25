@@ -1,0 +1,10 @@
+.category-container {
+    @apply flex flex-wrap justify-center;
+    @apply items-center;
+    @apply w-full;
+    @apply overflow-auto;
+    @apply bg-gray-100;
+    @apply gap-8;
+    @apply p-12;
+    @apply pb-20;
+}

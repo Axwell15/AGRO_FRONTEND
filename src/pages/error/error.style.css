@@ -1,0 +1,14 @@
+.bg-container{
+    background-image: url("../../assets/images/bg-forms.jpg");
+    @apply w-full h-full;
+    @apply bg-cover;
+    @apply flex items-center justify-center;
+}
+
+.card-error{
+    @apply h-1/2 w-full md:w-1/2;
+    @apply flex flex-col;
+    @apply bg-primary-color;
+    @apply text-white;
+    @apply flex items-center justify-center;
+}

@@ -1,0 +1,53 @@
+.divlogin{
+    @apply mt-10;
+    @apply sm:mx-auto;
+    @apply sm:w-full;
+    @apply sm:max-w-sm;
+}
+
+.login {
+    @apply w-full md:w-fit;
+    @apply h-screen;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-around;
+    @apply pt-20;
+    @apply space-y-6;
+}
+
+.container-login-form {
+    @apply flex;
+    @apply flex-col;
+    @apply p-12;
+    @apply items-center;
+}
+
+.login-title {
+    @apply text-gray-900;
+    @apply text-3xl;
+    @apply text-center;
+}
+
+.info-login {
+    @apply flex;
+    @apply flex-col;
+    @apply font-medium;
+    @apply text-gray-900;
+    @apply pb-11;
+}
+
+.info-login input {
+    @apply block;
+    @apply w-full;
+    @apply rounded-md;
+    @apply border-0;
+    @apply py-1.5;
+    @apply text-gray-900;
+    @apply shadow-sm;
+    @apply ring-1;
+    @apply ring-inset;
+    @apply ring-gray-300;
+    @apply bg-inherit;
+    @apply pt-4;
+    @apply mt-2;
+}

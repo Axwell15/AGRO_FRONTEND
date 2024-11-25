@@ -1,0 +1,6 @@
+.card-container {
+    @apply flex flex-wrap justify-around pb-44 items-start gap-4;
+    @apply w-full;
+    @apply overflow-auto;
+    @apply bg-gray-100;
+}

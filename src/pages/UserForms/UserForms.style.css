@@ -1,0 +1,34 @@
+.userForms{
+    @apply flex;
+    @apply h-screen;
+    @apply overflow-hidden;
+    @apply w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700;
+}
+
+.Forms{
+    @apply bg-primary-color;
+    @apply w-full md:w-600;
+    @apply h-full;
+    @apply flex flex-col;
+    @apply justify-evenly;
+    @apply pt-12 pr-4 pl-4;
+    @apply overflow-y-hidden;
+}
+
+.title{
+    @apply text-white;
+    @apply text-3xl;
+    @apply font-title-font;
+    @apply text-center;
+}
+
+.bg-side-forms{
+    @apply w-0 md:w-full;
+    @apply h-full;
+}
+
+.bg-side-forms img{
+    @apply w-full;
+    @apply h-full;
+    @apply object-cover;
+}

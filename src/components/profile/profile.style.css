@@ -1,0 +1,51 @@
+.profile {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+    @apply h-screen md:h-full;
+    @apply w-full md:w-360 lg:w-1/3;
+    @apply gap-4;
+}
+
+.profile-img {
+    @apply w-40;
+    @apply h-40;
+}
+
+.userName {
+    @apply text-black;
+    @apply font-title-font;
+    @apply text-3xl;
+}
+
+.user-info {
+    @apply bg-secondary-color;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+    @apply w-fit;
+    @apply h-fit;
+    @apply rounded-xl;
+    @apply w-4/5;
+    @apply overflow-hidden
+}
+
+.info {
+    @apply text-white;
+    @apply text-xl;
+    @apply font-title-font;
+    @apply bg-secondary-color;
+    @apply m-2;
+}
+
+.profile-opt {
+    @apply bg-secondary-color;
+    @apply text-white;
+    @apply text-2xl;
+    @apply w-4/5;
+    @apply h-fit;
+    @apply p-2;
+    @apply rounded-xl;
+}

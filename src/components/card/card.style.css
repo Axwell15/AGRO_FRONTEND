@@ -1,0 +1,19 @@
+.card{
+    @apply bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative;
+}
+
+.card-title{
+    @apply text-lg font-extrabold text-gray-800;
+}
+
+.card-image{
+    @apply h-full w-full object-contain;
+}
+
+.btn-del{
+    @apply bg-red-500;
+    @apply text-white;
+    @apply rounded-lg;
+    @apply p-2;
+    @apply cursor-pointer;
+}
