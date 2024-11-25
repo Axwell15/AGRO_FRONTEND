@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('../AGRO_CLIENT/src/assets/fonts/Inter.ttc')format('truetype');
+    src: url('../AGRO_FRONTEND/src/assets/fonts/Inter.ttc')format('truetype');
 }
 
 :root {
