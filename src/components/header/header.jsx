@@ -161,7 +161,7 @@ const Header = ({ Hook, Value, hookNavigate }) => {
           <button
             onClick={(e) => {
               e.preventDefault(); // Prevent default button behavior
-              fetch(`${uri}logout`, {
+              fetch(`https://agrobackend-production-433c.up.railway.app/api/v1/auth/logout`, {
                 method: "GET",
                 credentials: "include", // Include cookies in the request
               })
