@@ -161,7 +161,7 @@ const Header = ({ Hook, Value, hookNavigate }) => {
           <button
             onClick={(e) => {
               e.preventDefault(); // Prevent default button behavior
-              fetch("/logout", {
+              fetch(`${uri}logout`, {
                 method: "GET",
                 credentials: "include", // Include cookies in the request
               })
