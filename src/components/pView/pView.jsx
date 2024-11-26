@@ -1,9 +1,12 @@
 import './pView.style.css';
-import {useState, useEffect} from 'react';
-import {getProduct, buyproduct} from '../../helpers/pView';
+import { useState, useEffect } from 'react';
+import { getProduct, buyproduct } from '../../helpers/pView';
+import { FaStar } from 'react-icons/fa';
 
-const productView = ({ ...props }) => {
+const ProductView = ({ ...props }) => {
   const [product, setProduct] = useState({});
+  const [rating, setRating] = useState(0); // Estado para la calificación seleccionada
+  const [hover, setHover] = useState(0); // Estado para manejar el hover sobre las estrellas
 
   useEffect(() => {
     getProduct().then((res) => {
@@ -11,11 +14,15 @@ const productView = ({ ...props }) => {
     });
   }, []);
 
+  const handleRatingChange = (newRating) => {
+    setRating(newRating); // Actualiza la calificación seleccionada
+  };
+
   return (
     <div {...props}>
       <div className="p-4 lg:max-w-5xl max-w-lg mx-auto">
         <div className="grid items-start grid-cols-1 lg:grid-cols-2 gap-6 max-lg:gap-12">
-          {/* Product Image */}
+          {/* Imagen del producto */}
           <div className="w-full lg:sticky top-0 sm:flex gap-2">
             <img
               src={product.image}
@@ -23,7 +30,7 @@ const productView = ({ ...props }) => {
               className="w-4/5 rounded-md object-cover"
             />
           </div>
-          {/* Product Details */}
+          {/* Detalles del producto */}
           <div>
             <h2 className="text-2xl font-bold text-gray-800">{product.name}</h2>
             <div className="flex flex-wrap gap-4 mt-4">
@@ -33,23 +40,26 @@ const productView = ({ ...props }) => {
               {product.category?.name || "Categoría no especificada"}
             </p>
             <p className="text-gray-800 text-xl font-bold">
-              {product.measureUnit?.name || "Unidad no especificada"} 
+              {product.measureUnit?.name || "Unidad no especificada"}
             </p>
-            <div className="flex space-x-2 mt-4">
-              {/* Star Rating Section */}
-              {[...Array(5)].map((_, i) => (
-                <svg
-                  key={i}
-                  className={`w-5 ${
-                    i < product.averageRating ? "fill-blue-600" : "fill-[#CED5D8]"
-                  }`}
-                  viewBox="0 0 14 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-                </svg>
-              ))}
+            <div className="mt-4">
+              <h3 className="text-lg font-bold text-gray-800">Calificación:</h3>
+              <div className="flex items-center space-x-2">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <FaStar
+                    key={star}
+                    className={`cursor-pointer ${
+                      (hover || rating) >= star ? 'text-yellow-500' : 'text-gray-400'
+                    }`}
+                    onClick={() => handleRatingChange(star)} // Selecciona calificación
+                    onMouseEnter={() => setHover(star)} // Maneja hover
+                    onMouseLeave={() => setHover(0)} // Limpia el hover
+                  />
+                ))}
+              </div>
+              <p className="mt-2 text-sm text-gray-600">
+                Selecciona una calificación para el producto.
+              </p>
             </div>
             <button
               className="w-full mt-8 px-6 py-3 bg-primary-color hover:bg-primary-alt text-white text-sm font-semibold rounded-md"
@@ -61,7 +71,7 @@ const productView = ({ ...props }) => {
               <h3 className="text-xl font-bold text-gray-800">Acerca del producto:</h3>
               <p className="text-gray-800">{product.description}</p>
             </div>
-            {/* Additional Information */}
+            {/* Información adicional */}
             <div className="mt-4 space-y-2">
               <p className="text-gray-800">
                 <strong>Variedad de grano:</strong> {product.grainVariety || "N/A"}
@@ -86,4 +96,4 @@ const productView = ({ ...props }) => {
   );
 };
 
-export default productView;
+export default ProductView;

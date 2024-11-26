@@ -17,9 +17,9 @@ module.exports = {
         "title-font": ["Inter", "sans-serif"],
       },
       colors: {
-        "primary-color": '#00b2a5',
-        "primary-alt": '#01705f',
-        "secondary-color": '#003000',
+        "primary-color": '#476A17',
+        "primary-alt": '#476A17',
+        "secondary-color": '#476A17',
         "alt-bg": '#D9D9D9',
       },
 

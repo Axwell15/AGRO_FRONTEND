@@ -97,7 +97,7 @@ const CardContainer = ({ hookNavigate, typeref }) => {
 
                 {/* Botón para abrir el modal de filtros */}
                 <button
-                    className="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-md"
+                    className="px-4 py-2.5 bg-primary-color hover:bg-primary-color text-white rounded-md"
                     onClick={openFiltersModal}
                 >
                     Filtros Avanzados
